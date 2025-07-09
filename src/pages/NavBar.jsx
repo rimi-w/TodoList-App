@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Footer from './Footer'
 
 export default function NavBar() {
     return (
@@ -9,6 +10,7 @@ export default function NavBar() {
                 <Link to='/todoList?todo'><div className="menu"></div></Link>
             </nav>
             <Outlet />
+            <Footer />
         </>
     )
 }

@@ -1,15 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   max-width: 1280px;
   height: 100vh;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
 .container {
   width: 90vw;
   min-width: 300px;
-  height: 100vh;
+  height: calc(100vh -200px);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -19,9 +23,9 @@
 nav {
   width: 100vw;
   min-width: 300px;
-  height: 70px;
+  min-height: 70px;
   font-size: 1.8rem;
-  background-color: #54545489;
+  background-color: #393939;
   padding: 0 50px;
   display: flex;
   justify-content: left;
@@ -35,4 +39,70 @@ nav {
   color: #ffffff;
   font-style: none;
   margin-right: 50px;
+}
+
+.footer {
+  width: 100vw;
+  min-height: 130px;
+  color: #7d7d7d;
+  border-top: 1.5px solid #393939;
+  padding: 0 40px;
+  position: fixed;
+  bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.members {
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.members a {
+  text-decoration: none;
+  color: #7d7d7d;
+}
+
+.members h4 {
+  font-size: 17px;
+  color: #919191;
+  padding-bottom: 5px;
+}
+
+.members p {
+  padding: 0 10px;
+  display: flex;
+}
+
+.leader {
+  display: flex;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.member div {
+  display: flex;
+  justify-content: center;
+}
+
+.github {
+  height: 20px;
+}
+
+.copyright {
+  font-size: 15px;
+}
+
+.name {
+  font-weight: 500;
 }
