@@ -16,13 +16,13 @@ const Footer = () => {
                             src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
                     </a>
                 </p>
-                <p>
+                <div>
                     Members&nbsp;&nbsp;
                     <div className="member">
                         <div>
                             <a
                                 className="name"
-                                href="">
+                                href="https://bok-project.vercel.app/">
                                 -&nbsp;윤경복&nbsp;&nbsp;
                             </a>
                             <a href="">
@@ -50,7 +50,7 @@ const Footer = () => {
                     </a> */}
                         </div>
                     </div>
-                </p>
+                </div>
             </div>
             <p className="copyright">
                 &copy; 리미(Rimi)

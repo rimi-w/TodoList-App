@@ -5,19 +5,20 @@
 }
 
 #root {
-  max-width: 1280px;
+  width: 100vw;
   height: 100vh;
   text-align: center;
 }
 
 .container {
-  width: 90vw;
+  width: 100vw;
   min-width: 300px;
-  height: calc(100vh -200px);
+  height: calc(100vh - 130px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  top: 70px;
 }
 
 nav {
@@ -41,6 +42,7 @@ nav {
   margin-right: 50px;
 }
 
+/* Footer */
 .footer {
   width: 100vw;
   min-height: 130px;
@@ -79,6 +81,11 @@ nav {
   display: flex;
 }
 
+.members div {
+  padding: 0;
+  display: flex;
+}
+
 .leader {
   display: flex;
   justify-content: center;
@@ -105,4 +112,52 @@ nav {
 
 .name {
   font-weight: 500;
+}
+
+/* Calender */
+.calenderContainer {
+  height: calc(100vh -200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.days {
+  height: 40px;
+  background-color: #ffffff31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day {
+  width: 80px;
+  height: 30px;
+}
+
+.days :first-child {
+  color: #ec4e4e;
+}
+
+.days :last-child {
+  color: #7892f0;
+}
+
+.date {
+  width: 80px;
+  height: 80px;
+}
+
+.date h2 {
+  height: 80px;
+  font-size: 15px;
+  display: flex;
+  padding: 6px;
+}
+
+.week :first-child h2 {
+  color: #ec4e4e;
+}
+
+.week :last-child h2 {
+  color: #7892f0;
 }

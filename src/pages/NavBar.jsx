@@ -4,11 +4,11 @@ import Footer from './Footer'
 export default function NavBar() {
     return (
         <>
-            <nav>
+            {/* <nav>
                 <Link to='/'><div className="menu">Home</div></Link>
                 <Link to='/todoList'><div className="menu">To do List</div></Link>
                 <Link to='/todoList?todo'><div className="menu"></div></Link>
-            </nav>
+            </nav> */}
             <Outlet />
             <Footer />
         </>

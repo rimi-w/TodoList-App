@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from './pages/NavBar'
 import Home from './pages/Home'
 import TodoList from './pages/TodoList'
-import Footer from './pages/Footer'
 
 function App() {
   return (
