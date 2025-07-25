@@ -3,14 +3,12 @@ import Footer from './Footer'
 
 export default function NavBar() {
     return (
-        <>
-            {/* <nav>
-                <Link to='/'><div className="menu">Home</div></Link>
-                <Link to='/todoList'><div className="menu">To do List</div></Link>
-                <Link to='/todoList?todo'><div className="menu"></div></Link>
-            </nav> */}
+        <div className="flex flex-col justify-start items-center">
+            <nav className="w-screen min-w-[300px] min-h-[70px] text-4xl px-10 pt-10 flex flex-col items-start">
+                <Link to='/'><div className="mr-[50px]">🗓</div></Link>
+            </nav>
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
